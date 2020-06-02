@@ -1,0 +1,65 @@
+
+<div id="articlelistnew" class="all hs_list">
+
+
+	<div class="articleh normal_post">
+  	                                  <span class="l1 a1">67</span>
+   	                                 <span class="l2 a2">0</span>
+                           	         <span class="l3 a3"><a href="/news,600025,925808166.html" title="桂冠电力与华能水电，水电低价股。">桂冠电力与华能水电，水电低价股。</a></span>
+                                      	  <span class="l4 a4"><a href="http://i.eastmoney.com/2307113021283726"  data-popper="2307113021283726" data-poptype="1" 	target="_blank"><font>西南水电</font></a><input type="hidden" value="0" /></span>
+                                   
+                                   	 <span class="l5 a5">04-27 15:06</span>
+                               	 </div>
+	(*N)
+
+
+</div>
+
+
+
+
+
+<div = "articleh normal_post" --> general post
+	<span(Readings) = "l1 a1"
+	<span(Comments) = "l2 a2"
+	<span(Post title & url) = "l3 a3"
+		<a herf = "URL"<post title
+	<span(PosterId) = "l4 a4"
+	<span(Date & Time) = "l5 a5"
+
+Post Table Format:
+"l1 a1"		"l2 a2"		"l3 a3"					"l4 a4"			"l5 a5"
+Readings	Comments	Url		Post_title		PosterInfo?		Date+Time?	
+
+<div class="zwli clearfix" ...	data-reply_like_count = ""
+  <div class="zwlitx">
+    <div class="zwlitxt">
+      <div class="zwlitime">
+      <div class="zwlitext stockcodec">
+	<div class="short_text">
+	  THINGS TO KEEP
+
+Post Table Format:
+  Headers: 
+	Primary Key (exchange_code, post_id) // exCode + post_id --> URL
+	exchange_code varchar(10) 
+	post_id varchar(20)
+	readings_num int
+	comments_num int
+	post_title varchar(255)
+	posterInfoPage varchar(255)
+	post_date_time varchar(50)
+
+Comment Table Format:
+  Headers:
+	Primary Key(comment_id, exchange_code, post_id)
+	Foreign Key(exchange_code, post_id)
+	comment_id int
+	comment_content varchar(2000)
+	like_num int
+	emotion_value decimal(4,2)
+	binded_comment_id int
+	
+				
+		
+		
